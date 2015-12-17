@@ -1,0 +1,36 @@
+{
+  "name": "mapi.infobubble",
+  "version": "1.0.0",
+  "description": "An easy to use wrapper for Google Maps API",
+  "main": "mapi.infobubble.js",
+  "scripts": {
+    "build-normal": "webpack src/mapi.infobubble.js mapi.infobubble.js",
+    "build-min": "webpack -p src/mapi.infobubble.js mapi.infobubble.min.js",
+    "build": "npm run build-normal && npm run build-min",
+    "dev": "webpack -w src/mapi.infobubble.js mapi.infobubble.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/baltazzar/mapi.infobubble.git"
+  },
+  "keywords": [
+    "google",
+    "maps"
+  ],
+  "author": "Thiago Ribeiro - thiagofribeiro@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-eslint": "^4.1.6",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-object-rest-spread": "^6.3.13",
+    "babel-preset-es2015": "^6.1.18",
+    "eslint": "^1.10.3",
+    "eslint-loader": "^1.1.1",
+    "webpack": "^1.12.9"
+  },
+  "dependencies": {
+    "js-info-bubble": "thiagofribeiro/js-info-bubble#gh-pages",
+    "underscore": "^1.8.3"
+  }
+}
