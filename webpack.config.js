@@ -7,6 +7,12 @@ module.exports = {
 		library: 'MapiInfoBubble'
 	},
 	externals: {
+        "jquery": {
+        	root: "jQuery",
+        	commonjs: "jquery",
+        	commonjs2: "jquery",
+        	amd: "jquery"
+        },
         "underscore": {
         	root: "_",
         	commonjs: "underscore",

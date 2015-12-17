@@ -5,14 +5,14 @@
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("underscore"));
+		module.exports = factory(require("jquery"), require("underscore"));
 	else if(typeof define === 'function' && define.amd)
-		define(["underscore"], factory);
+		define(["jquery", "underscore"], factory);
 	else if(typeof exports === 'object')
-		exports["MapiInfoBubble"] = factory(require("underscore"));
+		exports["MapiInfoBubble"] = factory(require("jquery"), require("underscore"));
 	else
-		root["MapiInfoBubble"] = factory(root["_"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_1__) {
+		root["MapiInfoBubble"] = factory(root["jQuery"], root["_"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_2__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -65,9 +65,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-	var _ = __webpack_require__(1);
+	var $ = __webpack_require__(1),
+	    _ = __webpack_require__(2);
 
-	__webpack_require__(2);
+	__webpack_require__(3);
 
 	var MapInfoBubble = {
 		infoBubble: InfoBubble,
@@ -143,6 +144,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 2 */
+/***/ function(module, exports) {
+
+	module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
+
+/***/ },
+/* 3 */
 /***/ function(module, exports) {
 
 	// ==ClosureCompiler==

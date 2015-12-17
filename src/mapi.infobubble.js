@@ -1,4 +1,5 @@
-var _ = require('underscore');
+var $ = require('jquery'),
+	_ = require('underscore');
 
 require('js-info-bubble');
 

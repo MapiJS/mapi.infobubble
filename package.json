@@ -30,6 +30,7 @@
     "webpack": "^1.12.9"
   },
   "dependencies": {
+    "jquery": "^2.1.4",
     "js-info-bubble": "thiagofribeiro/js-info-bubble#gh-pages",
     "underscore": "^1.8.3"
   }
