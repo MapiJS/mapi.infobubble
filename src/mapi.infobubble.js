@@ -54,4 +54,4 @@ let MapInfoBubble = {
 	}
 }
 InfoBubble = null;
-Module.exports = MapInfoBubble;
+module.exports = MapInfoBubble;
