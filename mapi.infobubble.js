@@ -133,7 +133,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		}
 	};
 	InfoBubble = null;
-	Module.exports = MapInfoBubble;
+	module.exports = MapInfoBubble;
 
 /***/ },
 /* 1 */
